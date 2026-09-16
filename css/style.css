@@ -1,0 +1,1106 @@
+
+
+:root {
+    /* Basisfarver og genanvendelige design */
+    --backgroundcolor: white;
+    --textcolor: black;
+    --textcolor2: white;
+    --textcolorGradient: rgba(255, 255, 255, 0.50);
+    --produktfarve1: #CEC5D3;
+    --produktfarve2: #D9A8B2;
+    --produktfarve3: #C3BF7D;
+    --produktfarve4: #C1D4D9;
+    --produktfarve5: #EDF1F6;
+    --border-radius: black;
+    --Cta: #FFFEDF;
+    --heroProduct: #f3f3CD
+}
+
+body {
+    /* Generel styling af siden */
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+
+.top-bar {
+    /* Top promo-bar */
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 20px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+.top-bar-text, .top-bar-sprog {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+.top-bar-sprog img {
+     height: 20px;
+    width: auto;
+}
+
+.trustpilot-items {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-right: 230px;
+}
+
+.trustpilot-items p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: auto;
+}
+
+.trustpilot {
+    display: block;
+    height: 20px;
+    width: auto;
+}
+
+
+button {
+    /* Fælles styling til knapper */
+    border: none;
+    background-color: transparent;
+    color: var(--textcolor);
+    border-radius: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: futura, sans-serif;
+
+}
+
+.topmenu {
+    /* Hovednavigation, der ligger oven på hero-billedet */
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    right: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.menu-group, .icons-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-family: futura, sans-serif;
+    font-weight: lighter;
+
+}
+
+
+.icons-group img {
+    height: 30px;
+    width: auto;
+}
+
+.menu-group{
+    height: 20px;
+    width: auto;
+}
+
+.menu-group img{
+    height: 20px;
+    width: auto;
+}
+
+.topmenu h3 {
+    font-size: 20px;
+    color: var(--textcolor2);
+    margin: 0;
+}
+
+
+.logo {
+    /* Brandlogo */
+    margin: 0 auto;
+    height: 80px;
+    width: auto;
+}
+
+.hero {
+    /* Hero-banner med fuldskærms baggrundsbillede */
+    position: relative;
+    background-image: linear-gradient(rgba(112, 110, 110, 0.5), rgba(0, 0, 0, 0.5)),
+     url('../Images/produktImages/HeroImg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: column;
+    height: 680px;
+}
+
+.hero h1 {
+    /* Placering af hero-overskrift */
+    position: absolute;
+    top: 200px;
+    left: 50px;
+    right: 30px;
+    font-size: 50px;
+    color: var(--textcolor2);
+    text-align: left;
+    padding: 10, 20px;
+    font-family: futura, sans-serif;
+    font-weight: lighter;
+
+
+}
+
+.hero-text p {
+    /* Understøttende tekst i hero-sektionen over h1*/
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    right: 30px;
+    font-size: 17px;
+    color: var(--textcolorGradient);
+    text-align: left;
+    padding: 10, 20px;
+    line-height: 1.6;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+.hero-text-under p {
+    /* Understøttende tekst i hero-sektionen under h1*/
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    right: 30px;
+    font-size: 20px;
+    color: var(--textcolorGradient);
+    text-align: left;
+    padding: 10, 20px;
+    line-height: 1.6;
+    font-weight: 300;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+
+.hero-button {
+    /* CTA-knap i hero-sektionen */
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    border-radius: 180px;
+    background-color: var(--Cta);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.hero-button img {
+    height: 25px;
+    width: auto;
+}
+
+.produkt-beskrivelse {
+    background-color: #FFFEDF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--textcolor);
+    padding: 30px;
+    font-family: futura, sans-serif;
+    font-weight: lighter;
+
+
+}
+
+.produkt-beskrivelse img{
+    height: 30px;
+    width: auto;
+}
+
+.produkt-beskrivelse-item1, .produkt-beskrivelse-item2, .produkt-beskrivelse-item3, .produkt-beskrivelse-item4  {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.produkt-beskrivelse h3, p {
+    margin: 5px 0 4px 0;
+}
+
+.color-picker {
+    background-color: #FFFEDF;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 50px;
+    padding-bottom: 370px;
+
+}
+
+.color-picker img {
+   position: absolute;
+   top: 10px;
+   left: 0px;
+   bottom: 50px;
+   height: 700px;
+   width: auto;
+   margin-right: 40px;
+}
+
+.color-pickerbox {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    right: 300px;
+    gap: 20px;
+    padding: 18px;
+    width: fit-content;
+    border-radius: 50px;
+    background-color: var(--heroProduct);
+}
+
+.colorpickerText {
+    position: relative;
+    top: 345px;
+    right: 280px;
+    color: var(--textcolor);
+    font-family: futura, sans-serif;
+
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.lilac {
+    background-color: var(--produktfarve1);
+}
+
+.pink {
+    background-color: var(--produktfarve2);
+}
+
+.olive {
+    background-color: var(--produktfarve3);
+}
+
+.blue {
+    background-color: #C1D4D9;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+
+.universe {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.universe h3 {
+    font-family: vazirmatn, sans-serif;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.universe h3 span {
+    font-family: IBM Plex Serif;
+    font-style: italic;
+    color: var(--produktfarve2);
+    font-size: larger;
+}
+
+.image-grid {
+    display: grid;
+
+    grid-template-columns: 
+    1.2fr 1fr 0.8fr 0.8fr;
+    
+    grid-template-rows:
+    210px 210px;
+    
+    gap: 28px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 18px;
+    display: block;
+}
+
+/* Venstre stort billede */
+.img-1 {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+/* Øverste midterste */
+.img-2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* Højt billede */
+.img-3 {
+  grid-column: 3;
+  grid-row: 1 / 3;
+}
+
+/* Højre billede */
+.img-4 {
+  grid-column: 4;
+  grid-row: 1 / 3;
+}
+
+/* Lille billede under billede 2 */
+.img-5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.oplevelser {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+
+}
+
+.oplevelser h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+
+.oplevelser h3 span {
+    font-style: italic;
+    color:#D9A8B2;
+    font-family: IBM Plex Serif;
+    font-size: larger;
+
+}
+
+
+.vectorbillede {
+    background-image: url('../Images/Icons/flowyVector1.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.anmendelser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    color: var(--textcolor);
+    padding: 70px;
+    margin-bottom: 40px;
+    margin-top:40px;
+}
+
+.anmendelserbox1{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 18px;
+    background-color:#EDF1F6;
+    padding: 40px;
+    border-radius: 12%;
+    height: auto;
+    width: 220px;
+    max-width: 100%;
+
+}
+
+.anmendelserbox1 h3{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #D9A8B2;
+    margin: 0 auto 10px;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+.anmendelserbox1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    background-color:#EDF1F6;
+    font-family: vazirmatn, sans-serif;
+
+
+}
+
+.anmendelserbox1Person {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.anmendelserbox1Person p {
+    font-size:  12px;
+    
+
+}
+
+.anmendelserbox1Person img {
+    height: 30px;
+    width: auto;
+}
+
+
+.knapperPilot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.button-left {
+    align-items: center;
+    border: solid, 2px var(--border-radius);
+    background-color: var(--Cta);
+    color: var(--textcolor);
+    border-radius: 70px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button-left img {
+    height: 20px;
+    align-items: center;
+
+}
+
+.button-right {
+    align-items: center;
+    border: solid, 2px var(--border-radius);
+    background-color: var(--Cta);
+    color: var(--textcolor);
+    border-radius: 70px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.button-right img {
+    height: 20px;
+    align-items: center;
+}
+
+
+.grab-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.grab-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.grab-text h2 {
+    font-family: futura, sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+    margin: 0 0 60px;
+    
+}
+
+.intro {
+    font-family: Vazirmatn, sans-serif;
+    font-size: 25px;
+    margin-bottom: 45px;
+}
+
+.beskrivelse {
+    font-family: Vazirmatn, sans-serif;
+    font-size: 25px;
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.matriale {
+    font-family: Vazirmatn, sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.farvelinjer {
+    font-family: futura, sans-serif;
+    font-weight: lighter;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.farvergrab {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.farvergrab button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 0;
+}
+
+.lilla {
+    background-color: var(--produktfarve1);
+}
+
+.lyserrød {
+    background-color: var(--produktfarve2);
+}
+
+.grøn {
+    background-color: var(--produktfarve3);
+}
+
+.blå {
+    background-color: var(--produktfarve4);
+}
+
+.blåhvid {
+    background-color: var(--produktfarve5);
+}
+
+.grab-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grab-image img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 24px;
+    display: block;
+}
+
+
+.app-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 100px;
+
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 50px;
+}
+
+.app-images {
+    position: relative;
+}
+
+    .app-image {
+        display: block;
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    .telefonpng-image {
+        position: absolute;
+        width: 30%;
+        right: -12%;
+        bottom: -10%;
+
+    }
+
+.app-text-container {
+    max-width: 550px;
+}
+
+    .app-overskrift h2 {
+        font-family: futura, sans-serif;
+        font-weight: lighter;
+        font-size: 50px;
+        margin: 0 0 40px;
+     }
+
+     .app-text{
+        font-family: Vazirmatn, sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+     }
+
+     .app-text2{
+        font-family: Vazirmatn, sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 40px;
+     }
+
+     .app-text-container h2 span {
+        font-family: IBM Plex Serif;
+        font-style: italic;
+        font-size: 65px;
+        color: var(--produktfarve2);
+     }
+
+
+
+.app-buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.store-button img {
+    height: 50px;
+    width: auto;
+    border-radius: 180px;
+    background-color: var(--produktfarve2);
+    padding: 10px 25px;
+    border: solid 2px var(--border-radius);
+}
+
+
+.infoApp {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--textcolor);
+    padding: 30px;
+
+}
+
+.infoApp-item1, .infoApp-item2, .infoApp-item3  {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.infoApp h3, p {
+        margin: 5px 0 4px 0;
+        font-family: futura, sans-serif;
+        font-weight: lighter;
+
+
+}
+
+
+/*HER*/
+
+.brand-billede {
+    background-image: url('../Images/produktImages/pigerISkov2.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brandtext {
+    text-align: center;
+    padding-bottom: 1500px;
+}
+
+.brandtext h1 {
+    font-family: IBM Plex Serif;
+    font-style: italic;
+    color: var(--produktfarve2);
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+    margin-bottom: 10px;
+}
+
+.logopicture {
+    display: block;
+    height: 30px;
+    width: auto;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.billedgalleri {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.billedgalleri img {
+width: 100%;
+height: 650px;
+object-fit: cover;
+display: block;
+border-radius: 25px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #fffde8;
+    
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 70px;
+}
+
+.arrow-left img {
+    height: 30px;
+    width: auto;
+}
+
+
+.arrow-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0px;
+}
+
+.arrow-right img {
+    height: 30px;
+    width: auto;
+}
+
+.nyhedsbrev{
+    background-image: url('../Images/Icons/nyhedsbrevVector.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    min-height: 450px;
+    padding-left:  200px;
+    padding-right: 200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: -120px;
+    margin: -120px;
+    
+    position: relative;
+    z-index: 2;
+}
+
+.nyhedsbrev-text h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-family: Vazirmatn, sans-serif;
+    font-weight: lighter;
+    max-width: 80%;
+}
+
+.nyhedsbrev-text h2 span{
+    font-family: futura, sans-serif;
+    font-weight: lighter;
+}
+
+.nyhedsbrev-text p {
+    font-size: 26px;
+    line-height: 1.5;
+    font-family: Vazirmatn, sans-serif;
+    max-width: 80%;
+}
+
+.ja-tak {
+    background-color: #D9A8B2;
+    border: 2px solid black;
+    border-radius: 50px;
+
+    padding: 18px 65px;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.nyhedsbrev-text, .ja-tak {
+    transform: translateY(-30px);
+    font-family: vazirmatn, sans-serif;
+
+}
+
+@media (max-width: 600px) {
+    .billedgalleri {
+        padding: 15px 5px 0;
+    }
+
+    .billedgalleri img {
+        height: 210px;
+        border-radius: 4px;
+    }
+
+    .arrow {
+        width: 20px;
+        height: 20px;
+        border-width: 1px;
+        font-size: 12px;
+    }
+
+    .arrow-left {
+        left: 45px;
+    }
+
+    .arrow-right {
+        right: 28px;
+    }
+
+    .arrow-left img,
+    .arrow-right img {
+        height: 10px;
+    }
+
+    .nyhedsbrev {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 110px;
+        margin: -55px 0 0;
+        padding: 42px 20px 14px;
+        gap: 12px;
+        background-size: 100% 100%;
+        align-items: center;
+    }
+
+    .nyhedsbrev-text {
+        flex: 1 1 auto;
+        transform: none;
+    }
+
+    .nyhedsbrev-text h2 {
+        font-size: 12px;
+        margin: 0 0 3px;
+    }
+
+    .nyhedsbrev-text p {
+        font-size: 8px;
+        line-height: 1.25;
+        margin: 0;
+        max-width: 190px;
+    }
+
+    .ja-tak {
+        transform: none;
+        padding: 4px 12px;
+        font-size: 8px;
+        border-width: 1px;
+    }
+
+    .kontakt {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .kontaktInfo {
+        padding: 10px 5px 0;
+    }
+
+    .logo {
+        height: auto;
+        width: 115px;
+    }
+
+    .kontakt p,
+    .footerPunkter1 p,
+    .footerPunkter2 p,
+    .footerPunkter3 p {
+        width: auto;
+        font-size: 6px;
+        line-height: 1.5;
+        font-family: vazirmatn, sans-serif;
+        font-weight: lighter;
+
+    }
+
+    .footerPunkter1,
+    .footerPunkter2,
+    .footerPunkter3 {
+        top: 10px;
+        right: auto;
+    }
+
+    .footerPunkter1 h3,
+    .footerPunkter2 h3,
+    .footerPunkter3 h3 {
+        font-size: 7px;
+        font-family: vazirmatn, sans-serif;
+
+    }
+
+    .insta,
+    .tiktok,
+    .facebook {
+        height: 9px;
+    }
+}
+
+
+.kontakt{
+    padding-top: 100px;
+    background-color: var(--Cta);
+    display: flex;
+    justify-content: baseline;
+}
+.kontaktInfo {
+    display: column;
+    justify-content: baseline;
+    padding: 50px;
+}
+
+.kontakt p {
+    line-height: 25px;
+    font-size: 17px;
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: vazirmatn, sans-serif;
+
+}
+
+.footerPunkter1 {
+    position: relative;
+    top: 90px;
+    right: 0px;
+}
+
+.footerPunkter2 {
+    position: relative;
+    top: 90px;
+    right: 100px;
+}
+
+.footerPunkter3 {
+    position: relative;
+    top: 90px;
+    right: 220px;
+}
+
+.footerPunkter1 p, .footerPunkter2 p, .footerPunkter3 p {
+    font-size: 14px;
+    line-height: 30px;
+    font-family: vazirmatn, sans-serif;
+    font-weight: lighter;
+
+}
+
+
+/* logo kun*/
+.logo {
+    height: 100px;
+    width: auto;
+}
+
+.insta, .tiktok, .facebook {
+    height: 20px;
+    width: auto;
+}
+
+.copyright {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    gap: 770px;
+    background-color: var(--Cta);
+    padding: 50px;
+}
+
+.copyright::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 90px;   
+    height: 2px;
+    background-color: var(--textcolor);
+}
+
+.rights {
+    display: flex;
+
+}
+
+.rights p, .links p {
+    font-family: vazirmatn, sans-serif;
+    font-weight: lighter;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
